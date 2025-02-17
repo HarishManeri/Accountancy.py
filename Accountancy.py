@@ -11,7 +11,7 @@ import joblib
 from datetime import datetime, timedelta
 
 # Configure Gemini AI
-genai.configure(api_key="AIzaSyBMopZ2k-O9PZQLVEQQV36r8wRAlJBsT-o")
+genai.configure(api_key=st.secrets["AIzaSyBMopZ2k-O9PZQLVEQQV36r8wRAlJBsT-o"])
 model = genai.GenerativeModel('gemini-pro')
 
 class AccountingAISystem:
